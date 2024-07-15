@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
     background-color: #000;
     color: #fff;
+    overflow-x: hidden;
 }
 
 header {
@@ -12,13 +13,22 @@ header {
     color: white;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
 }
 
 nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 nav .menu ul {
@@ -30,11 +40,6 @@ nav .menu ul {
 nav .menu ul li a {
     color: white;
     text-decoration: none;
-}
-
-.hamburger-menu {
-    display: none;
-    cursor: pointer;
 }
 
 .section {
@@ -131,28 +136,32 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
+    padding: 0.5rem;
+    position: relative;
     width: 100%;
-    bottom: 0;
 }
 
-/* Styles pour mobile */
 @media (max-width: 768px) {
     .menu {
-        display: none;
-    }
-    
-    .hamburger-menu {
-        display: block;
-    }
-    
-    nav .menu.active {
-        display: block;
-    }
-    
-    .skills-grid, .projects-grid {
+        display: flex;
         flex-direction: column;
-        align-items: center;
     }
+}
+
+@media (min-width: 769px) {
+    .menu {
+        display: flex;
+    }
+}
+    nav .menu ul li a {
+    transition: font-size 0.3s ease, color 0.3s ease;
+    font-size: 1rem;
+}
+
+    nav .menu ul li a:hover {
+    font-size: 1.2rem;
+    color: #ff6347;
+}
+    nav .menu ul li a.active {
+    color: #ff6347; /* Change la couleur au rouge */
 }
