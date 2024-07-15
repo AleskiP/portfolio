@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
 }
 
 header {
@@ -40,10 +42,6 @@ nav .menu ul li a {
     text-align: center;
 }
 
-.bg-light {
-    background-color: #f4f4f4;
-}
-
 .profile-pic {
     width: 150px;
     border-radius: 50%;
@@ -54,19 +52,25 @@ nav .menu ul li a {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .skill {
-    background-color: white;
+    background-color: #222;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .skill i {
     font-size: 2rem;
-    color: #333;
+    color: #ff6347;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
 }
 
 .projects-grid {
@@ -118,9 +122,19 @@ nav .menu ul li a {
 }
 
 .social-links a {
-    color: #333;
+    color: #ff6347;
     font-size: 2rem;
     text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 /* Styles pour mobile */
