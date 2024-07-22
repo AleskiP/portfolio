@@ -228,3 +228,12 @@ nav .menu ul li a.active {
 .cv-button:hover {
     background-color: #ff4500;
 }
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px;
+    vertical-align: middle;
+    text-align: left;
+}
