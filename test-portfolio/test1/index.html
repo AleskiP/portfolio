@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef-d'œuvre Visuel - Plus Loin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #141E30, #243B55);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 10vh 2rem;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #00d4ff;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    .about, .projects {
+      padding: 5rem 2rem;
+      max-width: 1000px;
+    }
+
+    .project-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 1.5rem;
+      width: 300px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .project-card:hover img {
+      transform: scale(1.1);
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      background-color: #111;
+      width: 100%;
+      color: #aaa;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 2rem;
+      width: 100%;
+      max-width: 600px;
+      color: white;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+
+    form button {
+      background: #00d4ff;
+      color: black;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background: #007a99;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    // Animation personnalisée au chargement
+    window.addEventListener('load', function () {
+      document.body.classList.add('loaded');
+    });
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <h1 data-aos="zoom-in">Bienvenue sur une Expérience Visuelle Unique 🌟</h1>
+    <p data-aos="fade-up" data-aos-delay="300">Ouvrez grand les yeux et laissez la magie opérer.</p>
+  </header>
+
+  <section class="about" data-aos="fade-right">
+    <h2>Qui sommes-nous ?</h2>
+    <p>Nous créons des expériences visuelles qui captivent et inspirent. Chaque pixel compte.</p>
+  </section>
+
+  <section class="projects" data-aos="fade-left">
+    <h2>Projets</h2>
+    <div class="project-container">
+      <div class="project-card" data-aos="flip-left">
+        <img src="https://source.unsplash.com/random/300x200" alt="Project">
+        <h3>Projet Stardust</h3>
+        <p>Un voyage galactique entre design et créativité.</p>
+      </div>
+      <div class="project-card" data-aos="flip-right">
+        <img src="https://source.unsplash.com/random/300x201" alt="Project">
+        <h3>Projet Aurora</h3>
+        <p>Inspiré par les aurores boréales, lumineux et puissant.</p>
+      </div>
+      <div class="project-card" data-aos="flip-up">
+        <img src="https://source.unsplash.com/random/300x202" alt="Project">
+        <h3>Projet Solaris</h3>
+        <p>Un éclat solaire pour illuminer vos idées.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" data-aos="fade-up">
+    <h2>Contactez-nous</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Créé avec passion, transparence et style &copy; 2025</p>
+  </footer>
+</body>
+</html>
