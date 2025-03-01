@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,83 +9,96 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
-  <div id="particles-js"></div>
-  <nav class="sidebar">
-    <ul>
-      <li><a href="#hero" class="nav-link active">Accueil</a></li>
-      <li><a href="#about" class="nav-link">À propos</a></li>
-      <li><a href="#projects" class="nav-link">Projets</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="main-content">
-  <header class="hero section" id="hero">
-    <h1 data-aos="zoom-in">Bienvenue sur mon Portfolio</h1>
-    <p data-aos="fade-up" data-aos-delay="300">Découvrez mes projets et compétences en informatique.</p>
-  </header>
+   <div class="container">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#hero" class="nav-link active">Accueil</a></li>
+        <li><a href="#about" class="nav-link">À propos</a></li>
+        <li><a href="#projects" class="nav-link">Projets</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="main-content">
+      <header class="hero section" id="hero">
+        <h1 data-aos="zoom-in">Bienvenue sur mon Portfolio</h1>
+        <p data-aos="fade-up" data-aos-delay="300">Découvrez mes projets et compétences en informatique.</p>
+      </header>
+  
+      <main>
+        <section  id="about" data-aos="fade-right">
+          <h2>À propos</h2>
+          <p>
+            Je m'appelle <strong>Alexis PEREIRA</strong>, étudiant en <strong>BTS SIO</strong> (Services Informatiques aux
+            Organisations), option <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux).
+          </p>
+  
+          <p>
+            Passionné par l’informatique, j’ai choisi de me spécialiser dans l’administration des systèmes et réseaux afin
+            de garantir la sécurité et la performance des infrastructures informatiques.
+            Mon objectif est de maîtriser la gestion des réseaux, la virtualisation, l'administration des serveurs et la
+            cybersécurité.
+          </p>
+  
+          <p>
+            À travers mes études et mes projets, j’ai développé des compétences en <strong>configuration et sécurisation
+              de réseaux, gestion de serveurs Windows et Linux, virtualisation avec VMware, et supervision
+              réseau</strong>.
+            J’ai également appris à mettre en place des solutions de sauvegarde et à assurer la protection des données
+            contre les cybermenaces.
+          </p>
+  
+          <p>
+            Curieux et rigoureux, je suis toujours en quête de nouvelles connaissances et de défis techniques à relever.
+            Je suis ouvert aux opportunités professionnelles et collaborations dans le domaine des infrastructures IT et
+            de la cybersécurité.
+            N’hésitez pas à me contacter !
+          </p>
+  
+          <a href="cv-alexis-pereira.pdf" class="cv-button" target="_blank">Voir mon CV</a>
+        </section>
+  
+        <section  id="projects" data-aos="fade-left">
+          <h2>Projets</h2>
+          <div class="project-container">
+            <div class="project-card" data-aos="flip-left">
+              <img src="https://source.unsplash.com/random/300x200" alt="Projet Stardust">
+              <h3>Projet Stardust</h3>
+              <p>Un projet de développement web avec des animations interactives.</p>
+            </div>
+            <div class="project-card" data-aos="flip-right">
+              <img src="https://source.unsplash.com/random/300x201" alt="Projet Aurora">
+              <h3>Projet Aurora</h3>
+              <p>Développement d'une application de gestion de stock.</p>
+            </div>
+          </div>
+        </section>
+  
+        <section id="contact" data-aos="fade-up">
+          <h2>Contactez-moi</h2>
+          <form id="contact-form">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required aria-label="Nom">
+  
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-label="Email">
+  
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-label="Message"></textarea>
+  
+            <button type="submit">Envoyer</button>
+          </form>
+          <p id="form-message"></p>
+        </section>
+      </main>
+    </div>
+   </div>
 
-  <main>
-    <section class="about section" id="about" data-aos="fade-right">
-      <h2>À propos</h2>
-      <p>
-        Je m'appelle <strong>Alexis PEREIRA</strong>, étudiant en <strong>BTS SIO</strong> (Services Informatiques aux Organisations), option <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux).  
-      </p>
-      
-      <p>
-        Passionné par l’informatique, j’ai choisi de me spécialiser dans l’administration des systèmes et réseaux afin de garantir la sécurité et la performance des infrastructures informatiques.  
-        Mon objectif est de maîtriser la gestion des réseaux, la virtualisation, l'administration des serveurs et la cybersécurité.  
-      </p>
-      
-      <p>
-        À travers mes études et mes projets, j’ai développé des compétences en <strong>configuration et sécurisation de réseaux, gestion de serveurs Windows et Linux, virtualisation avec VMware, et supervision réseau</strong>.  
-        J’ai également appris à mettre en place des solutions de sauvegarde et à assurer la protection des données contre les cybermenaces.  
-      </p>
-      
-      <p>
-        Curieux et rigoureux, je suis toujours en quête de nouvelles connaissances et de défis techniques à relever.  
-        Je suis ouvert aux opportunités professionnelles et collaborations dans le domaine des infrastructures IT et de la cybersécurité.  
-        N’hésitez pas à me contacter !  
-      </p>
-      
-      <a href="cv-alexis-pereira.pdf" class="cv-button" target="_blank">Voir mon CV</a>
-    </section>
+   <div id="particles-js"></div>
 
-    <section class="projects section" id="projects" data-aos="fade-left">
-      <h2>Projets</h2>
-      <div class="project-container">
-        <div class="project-card" data-aos="flip-left">
-          <img src="https://source.unsplash.com/random/300x200" alt="Projet Stardust">
-          <h3>Projet Stardust</h3>
-          <p>Un projet de développement web avec des animations interactives.</p>
-        </div>
-        <div class="project-card" data-aos="flip-right">
-          <img src="https://source.unsplash.com/random/300x201" alt="Projet Aurora">
-          <h3>Projet Aurora</h3>
-          <p>Développement d'une application de gestion de stock.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section" id="contact" data-aos="fade-up">
-      <h2>Contactez-moi</h2>
-      <form id="contact-form">
-        <label for="name">Nom</label>
-        <input type="text" id="name" name="name" required aria-label="Nom">
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required aria-label="Email">
-        
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required aria-label="Message"></textarea>
-        
-        <button type="submit">Envoyer</button>
-      </form>
-      <p id="form-message"></p>
-    </section>
-  </main>
-
+  
   <footer>
     <p>Portfolio BTS SIO - Alexis Pereira &copy; 2025</p>
   </footer>
@@ -95,4 +109,5 @@
 <script defer src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script defer src="script.js"></script>
+
 </html>
