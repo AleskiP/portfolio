@@ -15,18 +15,18 @@ body {
   overflow-x: hidden;
 }
 
+/* Sidebar */
 .sidebar {
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 250px;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  width: 250px;
 }
 
 .sidebar ul {
@@ -34,7 +34,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  display: flex;
+  display: flex
+;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
@@ -55,17 +56,20 @@ body {
   transition: all 0.3s;
 }
 
+/* Effet au survol */
 .sidebar a:hover {
   background: #00d4ff;
   color: black;
 }
 
+/* Effet de surlignage dynamique */
 .sidebar a.active {
   background: #00d4ff;
   color: black;
   font-weight: bold;
 }
 
+/* Ajoute un petit décalage pour éviter que la section soit cachée par la navbar */
 .section {
   scroll-margin-top: 80px;
 }
@@ -189,27 +193,3 @@ form button:hover {
   width: fit-content;
 }
 
-#particles-js {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 0;
-}
-
-#particles-js canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: auto;
-}
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-  position: relative;
-  z-index: 1;
-}
