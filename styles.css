@@ -15,19 +15,18 @@ body {
   overflow-x: hidden;
 }
 
+/* Sidebar */
 .sidebar {
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 250px;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  width: 250px;
 }
 
 .sidebar ul {
@@ -35,7 +34,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  display: flex;
+  display: flex
+;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
@@ -47,7 +47,6 @@ body {
 }
 
 .sidebar a {
-  width: 250px;
   color: white;
   text-decoration: none;
   padding: 12px 20px;
@@ -57,22 +56,22 @@ body {
   transition: all 0.3s;
 }
 
+/* Effet au survol */
 .sidebar a:hover {
   background: #00d4ff;
   color: black;
 }
 
+/* Effet de surlignage dynamique */
 .sidebar a.active {
   background: #00d4ff;
   color: black;
   font-weight: bold;
 }
 
+/* Ajoute un petit décalage pour éviter que la section soit cachée par la navbar */
 .section {
   scroll-margin-top: 80px;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
 }
 
 .hero {
@@ -98,26 +97,11 @@ p {
   max-width: 1000px;
 }
 
-#about, #projects, #contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-
-#projects{
-  justify-content: center;
-  flex-direction: row;
-  width: fit-content;
-  height: fit-content;
-}
-
-
 .project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px;
+  gap: 20px;
 }
 
 .project-card {
@@ -160,7 +144,6 @@ form {
   width: 100%;
   max-width: 600px;
   color: white;
-  margin: auto;
 }
 
 form input, form textarea {
@@ -208,55 +191,5 @@ form button:hover {
   margin: 50px auto;
   text-align: center;
   width: fit-content;
-  margin-bottom: 10px;
 }
 
-#particles-js {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-}
-
-#particles-js canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: auto;
-}
-
-.main-content {
-  margin-left: 280px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-  position: relative;
-  z-index: 1;
-  width: 1000px;
-}
-
-.container{
-  display: flex;
-  gap: 20px;
-}
-
-.content-box {
-  border-radius: 10px;
-  padding: 2rem;
-  width: 100%;
-  max-width: 1000px;
-  text-align: center;
-  z-index: 10;
-  position: relative;
-  box-sizing: border-box;
-  background:rgba(0, 0, 0, 0.1);
-  margin: 50px auto;
-  padding-bottom: 50px;
-}
-
-h2 {
-  margin-bottom: 50px;
-}
