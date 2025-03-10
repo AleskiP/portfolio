@@ -242,8 +242,8 @@ form button:hover {
   position: relative;
   z-index: 1;
   width: 1000px;
-  margin-left: 250px !important; /* Fixe la marge de la sidebar */  
-  transition: none !important; /* Désactive tout effet involontaire */
+  margin-left: 250px !important;
+  transition: none !important;
 }
 
 .container{

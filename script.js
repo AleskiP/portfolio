@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
                const msg = document.getElementById("form-message");
                msg.textContent = "Message envoyé avec succès ! ✅";
                msg.style.color = "green";
-               msg.style.marginTop = "25px"; // Ajoute un petit espace
+               msg.style.marginTop = "25px";
                this.reset();
            })
            .catch((error) => {
