@@ -105,6 +105,9 @@ p {
   border-radius: 10px;
 }
 
+#bts, #e5, #e6 {
+}
+
 #projects{
   justify-content: center;
   flex-direction: row;
@@ -151,6 +154,8 @@ footer {
   background-color: #111;
   width: 100%;
   color: #aaa;
+  z-index: 1;
+  margin-left: 250px;
 }
 
 form {
@@ -204,11 +209,12 @@ form button:hover {
   color: black;
 }
 .cv-button {
-  display: block;
-  margin: 50px auto;
+  display: inline-block;
+  margin: 50px 25px;
   text-align: center;
   width: fit-content;
   margin-bottom: 10px;
+  flex-direction: row;
 }
 
 #particles-js {
