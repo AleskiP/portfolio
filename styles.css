@@ -98,14 +98,11 @@ p {
   max-width: 1000px;
 }
 
-#about, #projects, #contact {
+#about, #projects, #contact, #bts, #e5, #e6 {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-}
-
-#bts, #e5, #e6 {
 }
 
 #projects{
