@@ -1,7 +1,5 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -13,6 +11,9 @@ body {
   align-items: center;
   min-height: 100vh;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .sidebar {
@@ -246,7 +247,11 @@ form button:hover {
 
 .container{
   display: flex;
-  gap: 20px;
+  gap: 0.5rem; /* Très peu d'espace entre les éléments */
+  flex-direction: row;
+  justify-content: flex-start; /* Aligne les éléments au début */
+  width: 100%;
+  padding-left: 250px;
 }
 
 .content-box {
@@ -308,4 +313,8 @@ footer p {
 
 .linkedin a:hover {
   background-color: transparent;
+}
+
+html, body {
+  overflow-x: hidden; /* Pour éviter tout débordement horizontal */
 }
