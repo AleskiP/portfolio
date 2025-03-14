@@ -232,7 +232,7 @@ form button:hover {
 }
 
 .main-content {
-  margin-left: 280px;
+  margin: auto;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -241,7 +241,6 @@ form button:hover {
   position: relative;
   z-index: 1;
   width: 1000px;
-  margin-left: 250px !important;
   transition: none !important;
 }
 
