@@ -177,8 +177,8 @@ form input, form textarea {
   color: white;
 }
 
-form button {
-  background: #00d4ff;
+  form button {
+  background: transparent;
   color: black;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -191,9 +191,10 @@ form button {
 form button:hover {
   background: #007a99;
 }
+
 .cv-button {
   display: inline-block;
-  margin: 20px auto;
+  margin: 0px 25px;
   padding: 10px 20px;
   font-size: 1.1rem;
   color: #00d4ff;
@@ -201,19 +202,15 @@ form button:hover {
   border-radius: 5px;
   text-decoration: none;
   transition: 0.3s;
+  text-align: center;
+  width: fit-content;
+  margin-bottom: 10px;
+  flex-direction: row;
 }
 
 .cv-button:hover {
   background: #00d4ff;
   color: black;
-}
-.cv-button {
-  display: inline-block;
-  margin: 50px 25px;
-  text-align: center;
-  width: fit-content;
-  margin-bottom: 10px;
-  flex-direction: row;
 }
 
 #particles-js {
@@ -246,11 +243,11 @@ form button:hover {
 
 .container{
   display: flex;
-  gap: 0.5rem; /* Très peu d'espace entre les éléments */
+  gap: 0.5rem;
   flex-direction: row;
-  justify-content: flex-start; /* Aligne les éléments au début */
+  justify-content: flex-start;
   width: 100%;
-  padding-left: 250px;
+  padding-left: 250px !important;
 }
 
 .content-box {
@@ -315,5 +312,19 @@ footer p {
 }
 
 html, body {
-  overflow-x: hidden; /* Pour éviter tout débordement horizontal */
+  overflow-x: hidden;
+}
+
+#fiches {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.separator {
+  width: 2px;
+  height: 80px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: middle;
 }
