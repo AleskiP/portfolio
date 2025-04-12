@@ -204,7 +204,7 @@ form button:hover {
   transition: 0.3s;
   text-align: center;
   width: fit-content;
-  margin-bottom: 10px;
+  margin-top: 25px;
   flex-direction: row;
 }
 
@@ -315,7 +315,8 @@ html, body {
   overflow-x: hidden;
 }
 
-#fiches {
+#page_projet {
+
   align-items: center;
   justify-content: center;
   text-align: center;
