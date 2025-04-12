@@ -92,7 +92,9 @@ h1 {
 p {
   margin-top: 10px;
   font-size: 1.2rem;
-  color: #ddd;
+  color: #FFFFFF;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .about, .projects, .contact {
@@ -268,11 +270,6 @@ main h2 {
   margin-bottom: 50px;
 }
 
-p {
-  text-align: justify;
-  hyphens: auto;
-}
-
 footer p {
   text-align: center;
 }
@@ -285,21 +282,16 @@ footer p {
   margin-bottom: 5px;
 }
 
-.linkedin a:hover .fa-linkedin {
-  color: #0a66c2;
-  transition: color 0.3s ease;
-}
-
-.linkedin:hover {
+.social:hover {
   background-color: transparent;
 }
 
-.linkedin a {
+.social a {
   display: inline-block;
   text-decoration: none;
 }
 
-.linkedin {
+.social {
   display: flex;
   align-items: center;
   width: 0px;
@@ -307,8 +299,20 @@ footer p {
   justify-content: center;
 }
 
-.linkedin a:hover {
+.social a:hover {
   background-color: transparent;
+}
+
+.social a:hover #linkedin {
+  color: #0a66c2;
+  transition: color 0.3s ease;
+}
+
+.social a:hover #github {
+  color: black;
+  transition: color 0.3s ease;
+  background-color: white;
+  border-radius: 100%;
 }
 
 html, body {

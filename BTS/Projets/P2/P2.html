@@ -11,73 +11,113 @@
 </head>
 
 <body>
-
-   <div class="container">
+  <div class="container">
     <nav class="sidebar">
       <div class="profile">
         <h2>Alexis PEREIRA</h2>
         <p>Étudiant en BTS SIO</p>
       </div>
       <ul>
-        <li><a href="index.html#hero" class="nav-link">Accueil</a></li>
-        <li><a href="index.html#about" class="nav-link">À propos</a></li>
-        <li><a href="index.html#projects" class="nav-link">Projets</a></li>
-        <li><a href="index.html#bts" class="nav-link">BTS SIO</a></li>
-        <li><a href="index.html#e5" class="nav-link">Epreuve E5</a></li>
-        <li><a href="index.html#e6" class="nav-link">Epreuve E6</a></li>
-        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="Portfolio/index.html#hero" class="nav-link">Accueil</a></li>
+        <li><a href="Portfolio/index.html#about" class="nav-link">À propos</a></li>
+        <li><a href="Portfolio/index.html#projects" class="nav-link">Projets</a></li>
+        <li><a href="Portfolio/index.html#bts" class="nav-link">BTS SIO</a></li>
+        <li><a href="Portfolio/index.html#e5" class="nav-link">Epreuve E5</a></li>
+        <li><a href="Portfolio/index.html#e6" class="nav-link">Epreuve E6</a></li>
+        <li><a href="Portfolio/index.html#contact" class="nav-link">Contact</a></li>
       </ul>
       <div class="social-links">
-        <li class="linkedin">
-          <a href="https://www.linkedin.com/in/alexis-pereira-65355327a/">
-              <i class="fab fa-linkedin"></i>
+        <li class="social">
+          <a href="https://www.linkedin.com/in/alexis-pereira-65355327a/" target="_blank">
+              <i class="fab fa-linkedin" id="linkedin"></i>
           </a>
+          <a href="https://github.com/AleskiP/portfolio" target="_blank">
+            <i class="fab fa-github" id="github"></i>
+        </a>
       </li>
       </div>      
     </nav>
+
     <div class="main-content">
       <header class="hero section" id="hero">
         <h1 data-aos="zoom-in">Alexis PEREIRA</h1>
-        <p data-aos="fade-up" data-aos-delay="300">Projet 2</p>
+        <p data-aos="fade-up" data-aos-delay="300">Projet 2 - Déploiement automatique d’un OS</p>
       </header>
-  
+
       <main>
-        <section id="about" data-aos="fade-right">
+        <section id="intro" data-aos="fade-right">
           <div class="content-box">
-          <h2>Intro</h2>
-          <p>
-            Intro
-          </p>
+            <h2>Introduction</h2>
+            <p>
+              Ce projet consiste à automatiser complètement le déploiement de Windows 10 et Windows 11 via MDT (Microsoft Deployment Toolkit),
+              avec une installation silencieuse de logiciels comme VLC, TeamViewer et Paint.NET, tout en préconfigurant des
+              paramètres comme le mot de passe de session TeamViewer. L’objectif est d’obtenir une image de base réutilisable,
+              capturable et déployable à grande échelle, sans intervention humaine.
+            </p>
+            <img src="P2.png">
           </div>
         </section>
-        <section id="about">
-            <div class="content-box">
-            <h2>Sujet 1</h2>
+
+        <section id="objectifs" data-aos="fade-left">
+          <div class="content-box">
+            <h2>Objectifs du projet</h2>
+            <ul>
+              <li>Configurer un serveur MDT opérationnel.</li>
+              <li>Automatiser l’installation de Windows 10 Pro (22H2) et Windows 11 Pro (24H2).</li>
+              <li>Intégrer des logiciels avec installation silencieuse.</li>
+              <li>Capturer une image système personnalisée avec Sysprep.</li>
+              <li>Configurer l'ajout automatique à l'Active Directory.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="materiel" data-aos="fade-right">
+          <div class="content-box">
+            <h2>Matériel & Outils</h2>
+            <ul>
+              <li>Machine virutelle avec Windows Server 2016 et un AD, DNS et DHCP</li>
+              <li>Machine virutelle avec Windows Server 2022 et WDS + MDT</li>
+              <li>Machine virtuelle vierge pour simuler les postes clients</li>
+              <li>Image ISO Windows 10 Pro 22H2 et Windows 11 Pro 24H2</li>
+              <li>Fichiers d’installation des logiciels (.msi / .exe)</li>
+              <li>Sysprep, DISM, commandes PowerShell</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="realisation" data-aos="fade-left">
+          <div class="content-box">
+            <h2>Étapes de réalisation</h2>
+            <ol>
+            <li>Configuration des serveurs WDS et DHCP pour permettre de boot via le réseau</li>
+            <li>Installation de MDT sur Windows Server 2022 pour déployer Windows 10 et 11</li>
+            <li>Intégration automatique des machines au domaine Active Directory</li>
+            <li>Capture et déployement d'un master Windows 11 24H2</li>
+            <li>Déploiement des applications MSI et EXE sur Windows 10.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="fiche-procedure" data-aos="fade-up">
+          <div class="content-box">
+            <h2>Documents</h2>
             <p>
-              Veille 1
+              Voici la fiche PDF détaille chaque étape du projet, depuis la configuration initiale jusqu’aux tests de validation.
+               Elle contient également des captures d’écran et les commandes principales.
+               Ainsi que la fiche synthétique de présentation du projet à présenter à l’épreuve E6 du BTS SIO. 
+               Elle contient le contexte, les objectifs, les outils et les productions livrées.
+               Mais également le fichier de l'infrastructure réseau au format .pkt pour Cisco Packet Tracer.
             </p>
-            </div>
-          </section>
-          <section id="about">
-            <div class="content-box">
-            <h2>Sujet 2</h2>
-            <p>
-              Veille 2
-            </p>
-            </div>
-          </section>
-          <section id="about">
-            <div class="content-box">
-            <h2>Sujet 3</h2>
-            <p>
-              Veille 3
-            </p>
-            </div>
-          </section>
+            <a href="P2-Fiche de procédure.pdf" target="_blank" class="cv-button">Voir la fiche de procédure</a>
+            <a href="P2-Fiche E6.pdf" target="_blank" class="cv-button">Voir la fiche E6</a>
+            <a href="P2.pkt" target="_blank" class="cv-button">Télécharger le fichier .pkt</a>
+          </div>
+        </section>
       </main>
     </div>
-   </div>
-   <div id="particles-js"></div>
+  </div>
+
+  <div id="particles-js"></div>
   <footer>
     <p>Portfolio BTS SIO - Alexis Pereira &copy; 2025</p>
   </footer>

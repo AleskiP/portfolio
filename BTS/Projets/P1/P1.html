@@ -11,73 +11,114 @@
 </head>
 
 <body>
-
-   <div class="container">
+  <div class="container">
     <nav class="sidebar">
       <div class="profile">
         <h2>Alexis PEREIRA</h2>
         <p>Étudiant en BTS SIO</p>
       </div>
       <ul>
-        <li><a href="index.html#hero" class="nav-link">Accueil</a></li>
-        <li><a href="index.html#about" class="nav-link">À propos</a></li>
-        <li><a href="index.html#projects" class="nav-link">Projets</a></li>
-        <li><a href="index.html#bts" class="nav-link">BTS SIO</a></li>
-        <li><a href="index.html#e5" class="nav-link">Epreuve E5</a></li>
-        <li><a href="index.html#e6" class="nav-link">Epreuve E6</a></li>
-        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="Portfolio/index.html#hero" class="nav-link">Accueil</a></li>
+        <li><a href="Portfolio/index.html#about" class="nav-link">À propos</a></li>
+        <li><a href="Portfolio/index.html#projects" class="nav-link">Projets</a></li>
+        <li><a href="Portfolio/index.html#bts" class="nav-link">BTS SIO</a></li>
+        <li><a href="Portfolio/index.html#e5" class="nav-link">Epreuve E5</a></li>
+        <li><a href="Portfolio/index.html#e6" class="nav-link">Epreuve E6</a></li>
+        <li><a href="Portfolio/index.html#contact" class="nav-link">Contact</a></li>
       </ul>
       <div class="social-links">
-        <li class="linkedin">
-          <a href="https://www.linkedin.com/in/alexis-pereira-65355327a/">
-              <i class="fab fa-linkedin"></i>
+        <li class="social">
+          <a href="https://www.linkedin.com/in/alexis-pereira-65355327a/" target="_blank">
+              <i class="fab fa-linkedin" id="linkedin"></i>
           </a>
+          <a href="https://github.com/AleskiP/portfolio" target="_blank">
+            <i class="fab fa-github" id="github"></i>
+        </a>
       </li>
       </div>      
     </nav>
+
     <div class="main-content">
       <header class="hero section" id="hero">
         <h1 data-aos="zoom-in">Alexis PEREIRA</h1>
-        <p data-aos="fade-up" data-aos-delay="300">Projet 1</p>
+        <p data-aos="fade-up" data-aos-delay="300">Projet 2 - Conception d’une infrastructure réseau</p>
       </header>
-  
+
       <main>
-        <section id="about" data-aos="fade-right">
+        <section id="intro" data-aos="fade-right">
           <div class="content-box">
-          <h2>Intro</h2>
-          <p>
-            Intro
-          </p>
+            <h2>Introduction</h2>
+            <p>
+              Ce projet a pour but la conception d'une infrastructure réseau simulée sous Cisco Packet Tracer,
+               intégrant plusieurs notions clés : la segmentation en VLANs, le routage inter-VLAN et
+                l'attribution automatique d'adresses IP via un serveur DHCP centralisé
+            </p>
+            <img src="P1.png">
           </div>
         </section>
-        <section id="about">
-            <div class="content-box">
-            <h2>Bloc 1</h2>
+
+        <section id="objectifs" data-aos="fade-left">
+          <div class="content-box">
+            <h2>Objectifs du projet</h2>
+            <ul>
+              <li>Concevoir une architecture réseau d’entreprise cohérente</li>
+              <li>Assurer la segmentation logique du réseau avec des VLANs</li>
+              <li>Permettre une attribution d’adresses IP dynamique avec un serveur DHCP</li>
+              <li>Rendre le réseau résilient face aux pannes via STP</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="materiel" data-aos="fade-right">
+          <div class="content-box">
+            <h2>Matériel & Outils</h2>
+            <ul>
+              <li>Simulateur réseau : Cisco Packet Tracer</li>
+              <li>Switchs et routeurs Cisco (virtuels dans l’outil)</li>
+              <li>PCs et serveur DHCP simulés dans l’environnement</li>
+              <li>Documentation Cisco pour les commandes de configuration</li>
+              <li>Fiche de procédure détaillant toutes les étapes</li>
+              <li>Schéma de topologie réseau</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="realisation" data-aos="fade-left">
+          <div class="content-box">
+            <h2>Étapes de réalisation</h2>
+            <ol>
+              <li>Conception du schéma réseau logique avec identification des VLANs</li>
+              <li>Création et attribution des VLANs sur les switchs</li>
+              <li>Configuration des trunks et des ports access</li>
+              <li>Création des sous-interfaces sur le routeur pour le routage inter-VLAN</li>
+              <li>Ajout et configuration du serveur DHCP dans un VLAN dédié</li>
+              <li>Ajout de commandes sur les sous-interfaces pour permettre le relay DHCP</li>
+              <li>Implémentation de la redondance via STP (Spanning Tree Protocol)</li>
+              <li>Tests de connectivité, de distribution IP, et de filtrage réseau</li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="fiche-procedure" data-aos="fade-up">
+          <div class="content-box">
+            <h2>Documents</h2>
             <p>
-              Texte 1
+              Voici la fiche PDF détaille chaque étape du projet, depuis la configuration initiale jusqu’aux tests de validation.
+               Elle contient également des captures d’écran et les commandes principales.
+               Ainsi que la fiche synthétique de présentation du projet à présenter à l’épreuve E6 du BTS SIO. 
+               Elle contient le contexte, les objectifs, les outils et les productions livrées.
+               Mais également le fichier de l'infrastructure réseau au format .pkt pour Cisco Packet Tracer.
             </p>
-            </div>
-          </section>
-          <section id="about">
-            <div class="content-box">
-            <h2>Bloc 2</h2>
-            <p>
-              Texte 2
-            </p>
-            </div>
-          </section>
-          <section id="about">
-            <div class="content-box">
-            <h2>Bloc 3</h2>
-            <p>
-              Text 3
-            </p>
-            </div>
-          </section>
+            <a href="P1-Fiche de procédure.pdf" target="_blank" class="cv-button">Voir la fiche de procédure</a>
+            <a href="P1-Fiche E6.pdf" target="_blank" class="cv-button">Voir la fiche E6</a>
+            <a href="P1.pkt" target="_blank" class="cv-button">Télécharger le fichier .pkt</a>
+          </div>
+        </section>
       </main>
     </div>
-   </div>
-   <div id="particles-js"></div>
+  </div>
+
+  <div id="particles-js"></div>
   <footer>
     <p>Portfolio BTS SIO - Alexis Pereira &copy; 2025</p>
   </footer>
