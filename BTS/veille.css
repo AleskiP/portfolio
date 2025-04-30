@@ -325,3 +325,7 @@
     overflow-x: hidden; /* Pour éviter tout débordement horizontal */
   }
   
+p a {
+  color: #00d4ff;
+  font-weight: bold;
+}
