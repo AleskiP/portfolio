@@ -102,4 +102,3 @@ document.addEventListener("DOMContentLoaded", () => {
        "retina_detect": true
    });
  });
- 

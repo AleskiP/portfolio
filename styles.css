@@ -244,6 +244,8 @@ form button:hover {
   position: relative;
   z-index: 1;
   width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   transition: none !important;
 }
 
@@ -336,4 +338,67 @@ html, body {
   background-color: white;
   display: inline-block;
   vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+
+  .sidebar ul {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0;
+  }
+
+  .sidebar a {
+    width: auto;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    padding: 1.5rem 1rem;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 1rem;
+  }
+
+  form input, form textarea {
+    font-size: 1rem;
+  }
 }
